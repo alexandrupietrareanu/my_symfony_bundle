@@ -6,4 +6,5 @@ return [
     'Symfony\\Component\\DependencyInjection\\ContainerInterface' => true,
     'knpu_lorem_ipsum.knpu_word_provider' => true,
     'knpu_lorem_ipsum.word_provider' => true,
+    'stub_word_list' => true,
 ];

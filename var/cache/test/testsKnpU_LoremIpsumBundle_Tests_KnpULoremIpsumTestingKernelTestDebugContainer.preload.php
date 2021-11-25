@@ -10,12 +10,12 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/ContainerZPw3xnF/testsKnpU_LoremIpsumBundle_Tests_KnpULoremIpsumTestingKernelTestDebugContainer.php';
+require __DIR__.'/Container8QOx6rE/testsKnpU_LoremIpsumBundle_Tests_KnpULoremIpsumTestingKernelTestDebugContainer.php';
 
 $classes = [];
 $classes[] = 'KnpU\LoremIpsumBundle\KnpULoremIpsumBundle';
 $classes[] = 'KnpU\LoremIpsumBundle\KnpUIpsum';
-$classes[] = 'KnpU\LoremIpsumBundle\KnpUWordProvider';
+$classes[] = 'KnpU\LoremIpsumBundle\Tests\StubWordList';
 $classes[] = 'Symfony\Component\DependencyInjection\ContainerInterface';
 
 Preloader::preload($classes);

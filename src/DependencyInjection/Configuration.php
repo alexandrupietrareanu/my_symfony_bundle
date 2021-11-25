@@ -9,9 +9,11 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
+//        $treeBuilder = new TreeBuilder();
+//        $rootNode = $treeBuilder->root('knpu_lorem_ipsum');
+
         $treeBuilder = new TreeBuilder('knpu_lorem_ipsum');
         $rootNode = $treeBuilder->getRootNode();
-
         $rootNode
             ->children()
                 ->booleanNode('unicorns_are_real')->defaultTrue()->info('Whether or not you believe in unicorns')->end()
